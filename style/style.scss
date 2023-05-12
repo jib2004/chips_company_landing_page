@@ -1,0 +1,390 @@
+$backgroundColor:#F7EFED;
+$primaryColor:#000;
+$secondaryColor:#FFF;
+$corn:#D51037;
+$fire:#FDB339;
+$pepper:#206456;
+$footerBackground:#23675A;
+$dooterButton:#FFC936;
+
+@mixin container(){
+    width: 89%;
+        margin: 0 auto;
+        display: flex;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: $backgroundColor;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden
+}
+
+header{
+    
+
+
+    .container{
+        @include container();
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+
+        nav{
+            ul{
+                li{
+                    display: inline-block;
+                    margin-right: 30px;
+                    margin-left: 30px;
+                    a{
+                        text-decoration: none;
+                        color:$primaryColor;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    #Search{
+        position: relative;
+        width: 386px;
+        height: 65px;
+        // border: 1px solid red;
+        
+        input{
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            background: $primaryColor;
+            padding-left: 50px;
+            padding-right: 40px;
+            color: $secondaryColor;
+
+            &::placeholder{
+                color: $secondaryColor;
+            }
+        }
+ 
+        svg{
+            width: 20px;
+            position: absolute;
+        }
+
+      .icon_1{
+        left: 4%;
+        top: 30%;
+      }
+
+      .icon_2{
+        right: 4%;
+        // border-left: 1px solid white;
+        top: 30%;
+      }
+    }
+}
+
+
+main{
+    margin-top: 30px;
+    position: relative;
+    .main_contaner{
+        @include container();
+        width: 70%;
+        align-items: center;
+        // border: 1px solid blue;
+
+        .left{
+            .flamin{
+                position: relative ;
+                h1{
+                    font-family:'Gilroy' ,sans-serif;
+                    // padding-top: 25px;
+                    font-size: 80px;
+                    width: 500px;
+                    line-height: 96px;
+                }
+                .pepper_pic{
+    
+                    position: absolute;
+                    top: 1.5em;
+                    right: 15px;
+                }
+            }
+
+            .desc{
+                padding-top: 10px;
+                p{
+                    font-family:'Gilroy' ,sans-serif;
+                    list-style: 1.5;
+                    width: 590px;
+                    height: 70px;
+                    vertical-align: top;
+                    color: black;
+                    opacity: 0.5;
+                    font-size: 25px;
+                }
+            }
+
+            .cart_conainer{
+                // border: 1px solid red;
+                display: flex;
+                width: 100%;
+                align-items: center;
+                .cart_div{
+                    flex-basis: 245px;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 50px;
+                    height: 76px;
+                    color: white;
+                    background-color: $primaryColor;
+                    div{
+                        border: 1px solid black;
+                        border-radius: 50%;
+                        padding: 15px;
+                        margin-left: 10px;
+                        background-color: $dooterButton;
+                        display: inline-block;
+                    }
+                    span{
+                        font-size: 20px;
+                        margin-left: 16px;
+                    }
+                }
+
+                .amt_div{
+                    margin-left: 25px;
+                    flex-basis: 229px;
+                    height: 76px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    // border: 1px solid blue;
+                    div{
+                        // padding: ;
+                        display: inline-block;
+                        button{
+                            padding: 20px;
+                            border: none;
+                            outline: none;
+                            background-color: #fff;
+                            border-radius: 50%;
+                            box-shadow: 2px 2px 5px black;
+                            transition: all 0.5s;
+                            &:hover{
+                                background-color: #d0cfcf;
+                            }
+                        }
+                    }
+
+                    .amt_cont{
+                        border: 1px solid $dooterButton;
+                        margin: 0 15px;
+                        width: 58px;
+                        height: 58px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    
+                        border-radius: 50%;
+                    span{
+                        // padding: 5px;
+                        // border: 1px solid ;
+                        background-color: #fff;
+                        width: 45px;
+                        height: 45px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        // padding-right: 50px;
+                        border-radius: 50%;
+                    }}
+
+                    
+                }
+            }
+        }
+
+
+        .right{
+            position: relative;
+
+            .plane{
+                position: absolute;
+                top: -2em;
+                // left: 0;
+                right: 35em;
+                z-index: 10;
+            }
+
+            .chip_img{
+                height: 530px;
+                position: relative;
+                width: 400px;
+                // border: 1px solid red ;
+
+                div{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    .main_img{
+                    
+                        width: 400px;
+                        // box-shadow: 10px 10px 10px 10px;
+                        filter: drop-shadow(0 -6mm 4mm #555);
+                        top: 0;
+                        object-fit: contain;
+                    }
+
+                    .line{
+                    // border: 1px solid;
+                    // width: 400px;
+                    // height: 500px;            
+                }
+                }
+
+                .line_div{
+                    z-index: -1;
+                    left: -31.5em;
+                    top: -11em;
+                    transform: rotateX(30deg);
+                }
+
+                
+
+                
+            }
+
+        }
+    }
+
+    .side-chilli{
+        position: absolute;
+        right: 0;
+        top: 15em;
+    }
+}
+aside{
+    position: absolute;
+    top: 30%;
+    right: 25px;
+    width: 176px;
+    height: 320px;
+    padding: 10px;
+    .veggies{
+        display: flex;
+        align-items: center;
+      
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // border: 1px solid;
+            text-align: center;
+            box-shadow: -2px 5px 5px black;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .veg_1{
+            background-color: $pepper;
+        }
+        .veg_2{
+            background-color: $corn;
+            margin-top: 20px;
+            
+        }
+        .veg_3{
+            background-color: $fire;
+            margin-top: 20px;
+        }
+
+        span{
+            margin-left: 30px;
+
+        }
+    }
+}
+
+
+footer{
+    
+    .footerContainer{
+        position: relative;
+        width: 80%;
+        // padding: 20px;
+        margin: 0 auto;
+        background-color: $footerBackground;
+        z-index: -3;
+        padding: 20px;
+        padding-bottom: 0;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        margin-top: 50px;
+
+        &::before{
+            // padding: 20px;
+            position: absolute;
+            content: "";
+            z-index: -2;
+            width: 100%;
+            height: 100%;
+            // border: 1px solid;
+            background: url(img/footerBack.png);
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        .gridContainer{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            .box{
+                // border: 1px solid;
+                flex-wrap: wrap;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .box_item{
+                    position: relative;
+                    left: -25px;
+                    z-index: -1;
+                    background-color: #fff;
+                    width: 217px;
+                    height: 135px;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    padding: 20px;
+                .img_cont{
+                    margin: 10px 0;
+                }
+
+                span{
+                    position: absolute;
+                    top: 50px;
+                    right: 65px;
+                }
+
+                    button{
+                        background-color: $dooterButton;
+                        padding: 10px;
+                        margin: 15px 0;
+                        font-size: 10px;
+                        border: none;
+                        border-radius: 30px;
+
+                        &:hover{
+                            background-color: #cf9f1c;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

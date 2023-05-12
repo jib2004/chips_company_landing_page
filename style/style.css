@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F7EFED;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+header .container {
+  width: 89%;
+  margin: 0 auto;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+header .container nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+header #Search {
+  position: relative;
+  width: 386px;
+  height: 65px;
+}
+header #Search input {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: #000;
+  padding-left: 50px;
+  padding-right: 40px;
+  color: #FFF;
+}
+header #Search input::placeholder {
+  color: #FFF;
+}
+header #Search svg {
+  width: 20px;
+  position: absolute;
+}
+header #Search .icon_1 {
+  left: 4%;
+  top: 30%;
+}
+header #Search .icon_2 {
+  right: 4%;
+  top: 30%;
+}
+
+main {
+  margin-top: 30px;
+  position: relative;
+}
+main .main_contaner {
+  width: 89%;
+  margin: 0 auto;
+  display: flex;
+  width: 70%;
+  align-items: center;
+}
+main .main_contaner .left .flamin {
+  position: relative;
+}
+main .main_contaner .left .flamin h1 {
+  font-family: "Gilroy", sans-serif;
+  font-size: 80px;
+  width: 500px;
+  line-height: 96px;
+}
+main .main_contaner .left .flamin .pepper_pic {
+  position: absolute;
+  top: 1.5em;
+  right: 15px;
+}
+main .main_contaner .left .desc {
+  padding-top: 10px;
+}
+main .main_contaner .left .desc p {
+  font-family: "Gilroy", sans-serif;
+  list-style: 1.5;
+  width: 590px;
+  height: 70px;
+  vertical-align: top;
+  color: black;
+  opacity: 0.5;
+  font-size: 25px;
+}
+main .main_contaner .left .cart_conainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+main .main_contaner .left .cart_conainer .cart_div {
+  flex-basis: 245px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  height: 76px;
+  color: white;
+  background-color: #000;
+}
+main .main_contaner .left .cart_conainer .cart_div div {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 15px;
+  margin-left: 10px;
+  background-color: #FFC936;
+  display: inline-block;
+}
+main .main_contaner .left .cart_conainer .cart_div span {
+  font-size: 20px;
+  margin-left: 16px;
+}
+main .main_contaner .left .cart_conainer .amt_div {
+  margin-left: 25px;
+  flex-basis: 229px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .main_contaner .left .cart_conainer .amt_div div {
+  display: inline-block;
+}
+main .main_contaner .left .cart_conainer .amt_div div button {
+  padding: 20px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px black;
+  transition: all 0.5s;
+}
+main .main_contaner .left .cart_conainer .amt_div div button:hover {
+  background-color: #d0cfcf;
+}
+main .main_contaner .left .cart_conainer .amt_div .amt_cont {
+  border: 1px solid #FFC936;
+  margin: 0 15px;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+main .main_contaner .left .cart_conainer .amt_div .amt_cont span {
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+main .main_contaner .right {
+  position: relative;
+}
+main .main_contaner .right .plane {
+  position: absolute;
+  top: -2em;
+  right: 35em;
+  z-index: 10;
+}
+main .main_contaner .right .chip_img {
+  height: 530px;
+  position: relative;
+  width: 400px;
+}
+main .main_contaner .right .chip_img div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main .main_contaner .right .chip_img div .main_img {
+  width: 400px;
+  filter: drop-shadow(0 -6mm 4mm #555);
+  top: 0;
+  object-fit: contain;
+}
+main .main_contaner .right .chip_img .line_div {
+  z-index: -1;
+  left: -31.5em;
+  top: -11em;
+  transform: rotateX(30deg);
+}
+main .side-chilli {
+  position: absolute;
+  right: 0;
+  top: 15em;
+}
+
+aside {
+  position: absolute;
+  top: 30%;
+  right: 25px;
+  width: 176px;
+  height: 320px;
+  padding: 10px;
+}
+aside .veggies {
+  display: flex;
+  align-items: center;
+}
+aside .veggies div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: -2px 5px 5px black;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+aside .veggies .veg_1 {
+  background-color: #206456;
+}
+aside .veggies .veg_2 {
+  background-color: #D51037;
+  margin-top: 20px;
+}
+aside .veggies .veg_3 {
+  background-color: #FDB339;
+  margin-top: 20px;
+}
+aside .veggies span {
+  margin-left: 30px;
+}
+
+footer .footerContainer {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #23675A;
+  z-index: -3;
+  padding: 20px;
+  padding-bottom: 0;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-top: 50px;
+}
+footer .footerContainer::before {
+  position: absolute;
+  content: "";
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background: url(img/footerBack.png);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+footer .footerContainer .gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+footer .footerContainer .gridContainer .box {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .footerContainer .gridContainer .box .box_item {
+  position: relative;
+  left: -25px;
+  z-index: -1;
+  background-color: #fff;
+  width: 217px;
+  height: 135px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 20px;
+}
+footer .footerContainer .gridContainer .box .box_item .img_cont {
+  margin: 10px 0;
+}
+footer .footerContainer .gridContainer .box .box_item span {
+  position: absolute;
+  top: 50px;
+  right: 65px;
+}
+footer .footerContainer .gridContainer .box .box_item button {
+  background-color: #FFC936;
+  padding: 10px;
+  margin: 15px 0;
+  font-size: 10px;
+  border: none;
+  border-radius: 30px;
+}
+footer .footerContainer .gridContainer .box .box_item button:hover {
+  background-color: #cf9f1c;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
